@@ -1,14 +1,13 @@
 import { fileURLToPath, URL } from 'node:url'
-import Vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue'
 import Fonts from 'unplugin-fonts/vite'
 import { defineConfig } from 'vite'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   base: '/vue-quiz-app/',
   plugins: [
-    Vue({
+    vue({
       template: { transformAssetUrls },
     }),
     Vuetify({
