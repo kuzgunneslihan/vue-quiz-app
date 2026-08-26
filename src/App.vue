@@ -137,7 +137,7 @@ const formattedTime = computed(() => {
   return `${m}:${String(s).padStart(2, '0')}`
 })
 
-// Süre azaldıkça yeşilden turuncuya kayar, son 15 saniye tamamen kırmızı olur
+// Süre azaldıkça yeşilden turuncuya döner son 15 saniye tamamen kırmızı olur
 function mixColor(from, to, t) {
   const r = Math.round(from[0] + (to[0] - from[0]) * t)
   const g = Math.round(from[1] + (to[1] - from[1]) * t)
