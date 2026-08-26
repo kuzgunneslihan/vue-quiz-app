@@ -14,8 +14,8 @@ export async function fetchQuizQuestions(categoryName) {
     return []
   }
 
-  // güncel model gemini-3.6-flash.
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`
+  
+const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`
 
   const prompt = `${categoryName} kategorisinde 10 adet çoktan seçmeli Türkçe quiz sorusu hazırla. 
   Kurallar:
