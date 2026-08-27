@@ -4,6 +4,7 @@ import Fonts from 'unplugin-fonts/vite'
 import { defineConfig } from 'vite'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
+
 export default defineConfig({
   base: '/vue-quiz-app/',
   plugins: [
@@ -20,6 +21,7 @@ export default defineConfig({
             name: 'Roboto',
             weights: [100, 300, 400, 500, 700, 900],
             styles: ['normal', 'italic'],
+            subset: 'latin',  
           },
         ],
       },
